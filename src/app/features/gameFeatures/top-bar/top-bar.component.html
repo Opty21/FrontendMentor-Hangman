@@ -1,0 +1,15 @@
+<div class=" topRow flex flex-col lg:flex-row gap-y-5">
+    <div class="lg:w-1/2 flex flex-row justify-between lg:justify-normal">
+        <div (click)="pauseMenu.emit()" class="menu playButton bg-gradient-to-b from-fuchsia-400 to-sky-500 cursor-pointer transition-all duration-100 w-fit h-fit aspect-square p-2 rounded-full">
+            <img class="scale-75 opacity-80 m-auto origin-center transition-all duration-100 " src="assets/images/icon-menu.svg"/>
+        </div>
+        <p class="text-5xl font-mouse self-center text-white ml-5">{{ gameService.currentCategory | firstUpper }}</p>
+    </div>
+    <div class="lg:w-1/2  flex flex-row relative justify-end">
+        <div class=" w-full lg:w-1/4 h-6 bg-white rounded-full p-1.5 self-center mr-5">
+            <div [style.width]=" gameService.currentHealth / gameService.maxHealth * 100+'%'" class="bg-fuchsia-800 h-full rounded-full self-center"></div>
+        </div>
+        <img class=" scale-75  origin-center transition-all duration-100 " src="assets/images/icon-heart.svg"/>
+
+    </div>
+</div>

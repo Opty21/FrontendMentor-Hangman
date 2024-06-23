@@ -1,0 +1,12 @@
+<div class="flex flex-row justify-around flex-wrap gap-x-10 gap-y-5 lg:px-20 mt-10">
+    @for (word of gameService.currentWord.split(' '); track $index) {
+        <!-- {{word}} -->
+        <div class="flex flex-row flex-wrap justify-center">
+            @for (letter of word; track $index) {
+                <app-letter-box [gameStatus]="gameStatus" [solved]="gameService.guessedLetters.has(letter)">{{letter.toUpperCase()}}</app-letter-box>
+            }
+        </div>
+
+        
+    }
+</div>

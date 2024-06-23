@@ -1,0 +1,11 @@
+.playButton{
+    box-shadow: inset 0 -4px 0 6px #5632d8af,0px 0px 12px 1px rgba(0, 0, 0, 0.388);
+    // border:2px solid #140e66;
+    &:hover{
+        transform: scale(1.05);
+        // box-shadow: inset 0 -6px 0px 6px #c766ffaf;
+        img{
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<div class="p-2">
+    <div [ngClass]="{'opacity-75 brightness-75':!solved,'!bg-red-800':!solved && gameStatus === gs.lose}" class="cont w-8 h-12 lg:h-auto lg:w-20 lg:aspect-square text-center flex flex-col justify-center bg-blue-600 rounded-lg lg:rounded-3xl">
+        <div *ngIf="solved || gameStatus === gs.lose" [ngClass]="{}" class="text-5xl text-white font-mouse"><p><ng-content></ng-content></p></div>
+    </div>
+</div>
+

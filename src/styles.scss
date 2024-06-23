@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "MouseMemoirs";
+    src: url("assets/fonts/MouseMemoirs-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "NotoSerif";
+    src: url("assets/fonts/NotoSerifJP-Regular.otf");
+  }
+
+body{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url("assets/images/background-mobile.svg");
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{
+        background-image: url("assets/images/background-tablet.svg");
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: url("assets/images/background-desktop.svg");
+    }
+}
+
